@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 2px solid #777;
+}
+
+.brand, .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand img{
+    width: 80px;
+    margin-right: 0.6em;
+}
+
+.brand h2{
+    transition: .4s;
+}
+.brand:hover > h2{
+    color: #dec129;
+}
+
+.links li{
+    margin-right: 1em;
+    list-style: none;
+    background-color: black;
+    border-radius: 0.2em;
+    padding: 0.2em;
+}
+.links a{
+    color: white;
+    font-weight: 600;
+}
+.links a:hover{
+    color: #dec129;
+}
+
+#add a{
+    border: 1px solid #dec129;
+    font-weight: 900;
+}
+
+#add a:hover{
+    background-color: #dec129;
+    color: black;
+}

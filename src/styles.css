@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    color: #444;
+}
+a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: #dec129;
+}
+
+/* FORM */
+
+form{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: .4em;
+}
+.form-group input, .form-group textarea{
+    padding: 0.5em;
+    border-radius: 0.2em;
+    color: #777;
+}
+input[type="submit"]{
+    background-color: black;
+    color: #dec129;
+    padding: 1em 1em;
+    font-weight: bold;
+    font-size: .9em;
+    cursor: pointer;
+    border-radius: 0.2em;
+    transition: .4s;
+}
+
+input[type="submit"]:hover{
+    background-color: #dec129;
+    border-color: black;
+    color: black;
+}
+
+.validation-error p{
+    color: red;
+    margin: 0.5em 0;
+    border-left: 3px solid red;
+    padding-left: 0.2em;
+}
+
+/* BUTTONS */
+
+.edit-btn, .remove-btn{
+    border: 1px solid #EFEFEF;
+    padding: .4em 1em;
+    font-size: 1em;
+    margin: 0 .5em;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.4s;
+}
+
+button fa-icon, a fa-icon{
+    margin-right : 0.2em;
+}
+
+.edit-btn, .edit-btn path{
+    border-color: #007BFF;
+    color: #007BFF;
+}
+
+.edit-btn:hover, .edit-btn:hover path{
+    color: white;
+    background-color: #007BFF;
+}
+
+.remove-btn, .remove-btn path{
+    border-color: red;
+    color: red;
+}
+
+.remove-btn:hover, .remove-btn:hover path{
+    color: white;
+    background-color: red;
+}
